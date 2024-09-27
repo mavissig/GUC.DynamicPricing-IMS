@@ -12,8 +12,8 @@ type Config struct {
 }
 
 type RedisConfig struct {
-	Address  string `json:"DB_REDIS_ADDRESS"`
-	Password string `json:"DB_REDIS_PASSWORD"`
+	Address  string `envconfig:"DB_REDIS_ADDRESS" required:"true"`
+	Password string `envconfig:"DB_REDIS_PASSWORD" required:"true"`
 }
 
 func LoadConfig() *Config {

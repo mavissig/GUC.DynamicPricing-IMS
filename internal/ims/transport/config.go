@@ -13,7 +13,7 @@ type Config struct {
 }
 
 type HttpConfig struct {
-	Port string `envconfig:"HTTP_ROUTER_PORT" required:"true"`
+	Port string `envconfig:"HTTP_ROUTER_ADDRESS" required:"true"`
 }
 
 type KafkaConfig struct {
